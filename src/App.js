@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 import { Container } from 'semantic-ui-react';
 
 import MainHeader from './components/MaiHeader'
@@ -8,7 +10,6 @@ import EntryLines from './components/EntryLines'
 import ModalEdit from './components/ModalEdit';
 
 import './App.css';
-import { useEffect, useState } from 'react';
 
 function App() {
 
@@ -120,7 +121,6 @@ function App() {
     </Container>
   );
 }
-
 export default App
 
 var initialEntries = [
