@@ -15,7 +15,7 @@ function DisplayBalance(props) {
       <Statistic.Label styled={{ texAlign: 'left' }}>
         {label}
       </Statistic.Label>
-      <Statistic.Value>{value}</Statistic.Value>
+      <Statistic.Value>{isNaN(value) ? 0 : value}</Statistic.Value>
     </Statistic>
   )
 }

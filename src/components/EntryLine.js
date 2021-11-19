@@ -1,16 +1,19 @@
 import React, { Fragment } from 'react'
+import { useDispatch } from 'react-redux'
 
 import { Segment, Grid, Icon } from 'semantic-ui-react'
+import { removeEntryRedux } from '../redux/actions/entries.actions'
+import { openEditModal } from '../redux/actions/modals.action'
 
 function EntryLine({
-  id, 
-  description, 
-  value, 
-  isExpense=false, 
-  deleteEntry, 
-  editEntry
+  id,
+  description,
+  value,
+  isExpense = false,
 }) {
-    return (
+  const dispatch = useDispatch()
+
+  return (
     <Fragment>
       <Segment color={isExpense ? 'red' : 'green'}>
         <Grid columns={3} textAlign='right'>
@@ -18,14 +21,16 @@ function EntryLine({
             <Grid.Column width={10} textAlign='left'>{description}</Grid.Column>
             <Grid.Column width={3} textAlign='right'>{value}</Grid.Column>
             <Grid.Column width={3}>
-              <Icon name='edit' bordered onClick={() => editEntry(id)} />
-              <Icon name='trash' onClick={() => deleteEntry(id)}/>
+              <Icon 
+                name='edit' 
+                bordered 
+                onClick={() => dispatch(openEditModal(id))} />
+              <Icon name='trash' bordered onClick={() => dispatch(removeEntryRedux(id))} />
             </Grid.Column>
           </Grid.Row>
         </Grid>
       </Segment>
     </Fragment>
-    
   )
 }
 

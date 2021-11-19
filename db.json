@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "description": "Work income"
+    },
+    {
+      "id": 2,
+      "description": "Water Bill"
+    },
+    {
+      "id": 3,
+      "description": "Rent"
+    },
+    {
+      "id": 4,
+      "description": "Power Bill"
+    },
+    {
+      "id": "a3e2f487-dd94-42d6-9776-1823ea914fd9",
+      "description": "New Thing"
+    },
+    {
+      "id": "2845a5f5-d9c3-4245-9ade-5f35d87fc9a8",
+      "description": "Some thing"
+    }
+  ],
+  "values": [
+    {
+      "id": 1,
+      "value": 100,
+      "isExpense": false
+    },
+    {
+      "id": 2,
+      "value": 20,
+      "isExpense": true
+    },
+    {
+      "id": 3,
+      "value": 300,
+      "isExpense": true
+    },
+    {
+      "id": 4,
+      "value": 50,
+      "isExpense": true
+    },
+    {
+      "id": "a3e2f487-dd94-42d6-9776-1823ea914fd9",
+      "value": "100",
+      "isExpense": true
+    },
+    {
+      "id": "2845a5f5-d9c3-4245-9ade-5f35d87fc9a8",
+      "value": "100",
+      "isExpense": true
+    }
+  ]
+}
